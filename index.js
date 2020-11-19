@@ -2,6 +2,7 @@ const express=require("express");
 const path= require("path");
 const hbs=require("hbs");
 const app= express();
+const port=process.env.PORT || 3000;
 
 
 const static_path=path.join(__dirname,"./templates/views")
@@ -31,6 +32,6 @@ app.get("*",(req,res)=>{
     res.render("error");
 });
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("server is on");
 });
