@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kaushan Script', cursive;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    margin: 0;
+}
+
+
+.nav-section{
+    background-color: #34626c;
+}
+
+.navbar{
+    padding: 1.5rem 0;
+    background-color: #34626c;
+}
+
+.navbar a{
+    color: antiquewhite;
+    font-size: 1.4rem;
+}
+
+.navbar a:hover{
+    color: burlywood;
+}
+
+/* page section */
+
+.left-section{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.left-section h3{
+    text-transform: capitalize;
+    color: #16a596;
+}
+
+.left-section h1{
+    text-transform: capitalize;
+    color: darkcyan;
+}
+
+.left-section span{
+    text-transform: uppercase;
+    color: #81b214;
+}
+
+
+.right-section{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+/* footer section */
+
+.footer{
+    width: 100%;
+    padding: .5rem 0;
+    text-align: center;
+    background-color:#34626c ;
+    line-height: 2rem;
+    margin-top: auto;
+}
+
+.footer h4 , p{
+    margin: 0;
+    color: whitesmoke;
+}
+
+/* about page */
+.about-right-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-right-section h1{
+    text-transform: capitalize;
+}
+.about-right-section span{
+    text-transform: uppercase;
+    color:#519872;
+}
+
+
+/* weather page */
+
+.weather-div{
+    width: 70vw;
+}
+
+.weather-form{
+    display: flex;
+    
+}
+
+.weather-form input{
+    width: 60vw;
+    line-height: 3rem;
+    border: 2px solid teal;
+    border-radius: 22px;
+    outline: none;
+    text-align: center;
+}
+
+.weather-form button{
+    padding: .7rem;
+    background-color: teal;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    width: 6rem;
+}
+
+.output-section{
+    background-color:#34626c;
+    width: 30vw;
+    height: 50vh;
+    border-radius: 12px;
+    position: relative;
+}
+
+.output-date{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.output-data{
+    text-align: center;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.output-data h6{
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #fbf6f0;
+}
+.output-data p{
+    text-transform: capitalize;
+    font-size: 35px;
+    color: wheat;
+}
+
+.weather-mood{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:768px){
+    .weather{
+        width: 80vw;
+    }
+    .weather-form input{
+        line-height: 2rem;
+    }
+    .weather-form button{
+        padding: .5rem;
+        width: 4rem;
+    }
+    .output-section{
+        width: 50vw;
+        height: 40vh;
+    }
+    .weather-mood{
+        margin-top: 15px;
+    }
+    .output-data h6{
+        font-size: 18px;
+    }
+    .output-data p{
+        font-size: 23px;
+    }
+
+
+}
+

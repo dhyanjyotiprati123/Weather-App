@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>heading}}
+</head>
+<body>
+    {{>navbar}}
+    {{!-- page section --}}
+    <div class="weather-div mt-5 mx-auto">
+      <form class="weather-form">
+          <input id="cityName" type="text" placeholder="enter city name" autocomplete="off">
+          <button  type="submit" id="searchbtn">Search</button>
+      </form>
+    </div>
+    <div class="output-section mt-3 mx-auto ">
+      <div class="output-date">
+          <p id="day">day</p>
+          <p id="month">month</p>
+          <p id="time">time</p>
+      </div>
+      <div class="weather-mood mt-5" id="mood"></div>
+     <div class="output-data">
+       <h6 id="message"> Hello</h6>
+       <p id="temp">temp<sup>o</sup>C</p>
+     </div>
+    </div>
+
+    {{>footer}}
+
+    <script src="js/main.js"></script>
+</body>
+</html>
